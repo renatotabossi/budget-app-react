@@ -1,17 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import "bootstrap/dist/css/bootstrap.min.css"
-import { BudgetProvider } from "./contexts/BudgetContexts"
-
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BudgetsProvider } from "./contexts/BudgetContexts";
 
 ReactDOM.render(
-  <React.StrictMode>
-   <BudgetProvider>
-    <App /> 
-   </BudgetProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <BudgetsProvider>
+            <App />
+        </BudgetsProvider>
+    </React.StrictMode>,
+    document.getElementById("root")
 );
-
-
